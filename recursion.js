@@ -1,6 +1,6 @@
 function recursion(tree) {
-  let resultArr = [];
-  let workTree = JSON.parse(JSON.stringify(tree));
+  const resultArr = [];
+  const workTree = JSON.parse(JSON.stringify(tree));
   function addLeafToArray(leaf, curLevel) {
     if (!resultArr[curLevel]) {
       resultArr[curLevel] = [];
@@ -12,11 +12,9 @@ function recursion(tree) {
       return;
     }
 
-    let addedLvl = curLevel + 1;
+    const addedLvl = curLevel + 1;
     addLeafToArray(leaf.left, addedLvl);
     addLeafToArray(leaf.right, addedLvl);
-
-    return;
   }
 
   addLeafToArray(workTree, 0);
