@@ -4,7 +4,7 @@
   "description": "codejam",
   "main": "index.js",
   "scripts": {
-    "test": "run"
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,12 @@
   },
   "homepage": "https://github.com/YuliyaHlukhatarenka/rsschool-codejam#readme",
   "devDependencies": {
+    "babel-register": "^6.26.0",
     "eslint": "^5.8.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
   },
-  "dependencies": {},
   "keywords": []
 }

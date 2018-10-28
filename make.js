@@ -9,3 +9,5 @@ function make(...arg) {
   }
   return f;
 }
+
+exports.make = make;
